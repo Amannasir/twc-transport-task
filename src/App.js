@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import NavMenu from './components/NavMenu';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import FormDetails from './components/FormDetails';
+import InputForm from './components/InputForm';
+import HeaderDesign from './components/HeaderDesign';
+import FooterTWC from './components/FooterTWC';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='className="d-grid gap-'>
+      <NavMenu></NavMenu>
+      <HeaderDesign></HeaderDesign>
+    {/* <FormDetails> </FormDetails> */}
+ <InputForm></InputForm>
+ <FooterTWC></FooterTWC>
+ 
     </div>
   );
 }
